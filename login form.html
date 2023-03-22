@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+:root{
+    --indigo:#9e0b9e;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background:var(--indigo);
+    color:#fff;    
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--indigo);
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid var(--indigo);
+    cursor: pointer;
+    font-size: 1.7rem ;
+}
+
+.btn:hover{
+    background: rgba(128,0,128,0.2);
+    color: var(--indigo)
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background: #2D283E;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+
+.login-form-container{
+    position: fixed;
+    top: -120%; left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container.active{
+    top: 0;
+}
+
+.login-form-container form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: #fff;
+    width: 50rem;
+}
+
+.login-form-container form h3{
+    font-size: 3rem;
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem 0;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    text-transform: none;
+}
+
+.login-form-container form .box:focus{
+    border-color: var(--indigo);
+}
+
+.login-form-container form #remember{
+    margin: 2rem 0;
+}
+
+.login-form-container form label{
+    font-size: 1.5rem;
+}
+
+.login-form-container form .btn{
+    display: block;
+    width:100%;
+}
+
+.login-form-container form p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.login-form-container form p a{
+    color: var(--indigo);
+}
+
+.login-form-container form p a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+
+.login-form-container #form-close{
+    position: absolute;
+    top:2rem; right:3rem;
+    font-size: 5rem;
+    color:#fff;
+    cursor: pointer;
+}
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="login-form-container">
+    
+    <form action="">
+        <h3>Register</h3>
+        <input type="text" class="box" required placeholder="First Name">
+        <input type="text" class="box" required placeholder="Last Name">
+        <!-- <input type="date" class="box" required placeholder="Date of Birth"> -->
+        <input type="email" class="box" required placeholder="Enter your email">
+        <input type="password" class="box" required placeholder="Enter your password">
+        <input type="password" class="box" required placeholder="Confirm Password">
+        <input type="Submit" value="Register" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+  
+    </form>
+    
+    </div>
+    
+
+</body>
+</html>
