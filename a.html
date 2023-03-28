@@ -57,7 +57,7 @@
 
     <i class="fas fa-user" id="form-close"></i>
 
-<form action="">
+<form action="login.php" method="post">
     <h3>Login</h3>
     <input type="email" class="box" required placeholder="Enter your email" >
     <input type="password" class="box" required placeholder="Enter your password">
@@ -118,22 +118,23 @@
             <img src="main.jpg" alt="">
         </div>
 
-        <form action="">
+        <form action="Member.php" method="post">
             <div class="inputbox">
                 <h3>Name</h3>
-                <input type="text" required placeholder="Enter name">
+                <label for="firstName">First Name_Father Name_Surname Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" />
             </div>
             <div class="inputbox">
                 <h3>Phone Number</h3>
-                <input type="number" required placeholder="Enter Phone Number">
+                <input type="number" class="form-control" id="number" name="number" />
             </div>
             <div class="inputbox">
                 <h3>Membership in</h3>
-                <input type="text" required placeholder="Plantation, Donation, Garbage">
+                <input type="text" class="form-control" id="Membership" name="Membership" />
             </div>
             <div class="inputbox">
                 <h3>Duration</h3>
-                <input type="number" required placeholder="Number of Days"> 
+                <input type="text" class="form-control" id="Duration" name="Duration" /> 
             </div>
             <input type="SUBMIT" class="btn" value="Volunteer us!" >
         </form>
