@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NGO</title>
+    <title>Charity Box</title>
    
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 
@@ -22,9 +22,9 @@
 
 <header>
 
-    <div id="menu-bar" class="fas fa-bars"></div>
+    <div id="menu-bar" class="fas fa-bars" ></div>
 
-    <a href="#" class="logo"><span>C</span>harityBox</a>
+    <a href="https://github.com/AmeyChavan-Org/Charity_Box" class="logo"><h2 style="color:floralwhite;font-family:algerian;">Charity Box</h2></a>
 
     <nav class="navbar">
         <a href="#home">HOME</a>
@@ -77,7 +77,7 @@
     <div class="content">
         <h3>BRING SMILE</h3>
         <p>Charity is Supreme Virtue</p>
-        <a href="#" class="btn">discover more</a>
+        <a href="#" class="btn">Take a short Tutorial</a>
     </div>
 
     <div class="controls">
@@ -164,17 +164,17 @@
 
         <div class="box">
             <i class="fas fa-trash"></i>
-            <a href=""><h3>GARBAGE</h3></a>
+            <a href="garbage.html"><h3>GARBAGE</h3></a>
             <p>Show us the garbage and we are there to collect</p>
         </div>
         <div class="box">
             <i class="fas fa-hands"></i>
-            <a href=""><h3>DONATION</h3></a>
+            <a href="Donation.html"><h3>DONATION</h3></a>
             <p>Nothing is better than giving a little to the ones who needs</p>
         </div>
         <div class="box">
             <i class="fas fa-leaf"></i>
-            <a href=""><h3>TREE PLANTATION</h3></a>
+            <a href="tree.html"><h3>TREE PLANTATION</h3></a>
             <p>Plant to breathe purity</p>
         </div>
         
@@ -252,27 +252,34 @@
 
             <div class="swiper-slide">
                 <div class="box">
-                    <img src=""  alt="">
-                    <h3>Amey Chavan</h3>
+                    <img src="Amey.jpeg"  alt="">
+                    <h3><a href="https://www.linkedin.com/in/amey-chavan-8b5b19190">Amey Chavan</h3></a>
                     <p>computer science graduate ,persuing Masters in Computer Application in Fergusson, Mainly Contributing towards database management and Presentation </p>
                     </div>
             </div>
             <div class="swiper-slide">
                 <div class="box">
-                    <img src=""  alt="">
-                    <h3>Tejas Madane</h3>
+                    <img src="Tejas.jpeg"  alt="">
+                    <h3><a href="https://www.linkedin.com/in/tejas-madane-5a548a188">Tejas Madane</h3><a>
                     <p>Computer science graduate from SP college,persuing Masters in Computer Application in Fergusson, Working on the frontend of the website</p>
                    
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="box">
-                    <img src=""  alt="">
-                    <h3>Chetana Nannaware</h3>
+                    <img src="Chetana.jpeg"  alt="">
+                    <h3><a href="https://www.linkedin.com/in/chetana-n-20205a1aa">Chetana Nannaware</h3></a>
                     <p>computer science graduate ,persuing Masters in Computer Application in Fergusson, Manages the Documentaion and keep eye on project growth . </p>
                     </div>
             </div>
-            
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="Arti.jpeg"  alt="">
+                    <h3><a href="https://www.linkedin.com/in/arati-nimgaonkar-561622125">Mrs.Arati Nimgaonkar</h3><a>
+                    <p>Our Guide,Mrs.Arati Nimgaonkar Ma'am, has done M.C.S,M.Phil(Computer Science) , helps us to improve and suggest changes in the website</p>
+                   
+                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -302,17 +309,17 @@
             <img src="pl.jpg" alt="" width="100%">
         </div>
 
-        <form action="" style="flex: 1 1 50rem;">
+        <form action="message.php" method="post" style="flex: 1 1 50rem;">
             <div class="inputbox">
-                <input type="text" required placeholder="Name">
-                <input type="email" required placeholder="Email">
+                <input type="text" required placeholder="Name" class="form-control" id="firstName" name="firstName"/>
+                <input type="email" required placeholder="Email" class="form-control" id="email" name="email" />
             </div>
             <div class="inputbox">
-                <input type="number" required placeholder="Contact no.">
-                <input type="text" required placeholder="Subject">
+                <input type="number" required placeholder="Contact no." class="form-control" id="number" name="number" />
+                <input type="text" required placeholder="Subject" class="form-control" id="subject" name="subject" />
             </div>
-            <textarea placeholder="Message" name="" id="" cols="30" rows="10"></textarea>
-            <input type="SUBMIT" class="btn" value="     Send Message">
+            <textarea placeholder="Message" type="text" class="form-control" id="text" name="text"cols="30" rows="10"></textarea>
+            <input type="SUBMIT" class="btn" value="Send Message">
         </form>
 
 
@@ -378,7 +385,9 @@
             </div>-->
     </div>
 
-    <h1 class="credit"><a href="https://drive.google.com/drive/folders/1GEtl50EfInedxtAnEUS92JZJryLs0CMy" Created by <span> B4.G1 </span></h1></a>
+    <a href="https://drive.google.com/drive/folders/1GEtl50EfInedxtAnEUS92JZJryLs0CMy?usp=share_link"><h1 class="credit">Created by <span> B4.G1 </span></h1></a>
+    <h5>*Click On it For documentation</h5>
+
 </section>
 <!-- footer section ends -->
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
